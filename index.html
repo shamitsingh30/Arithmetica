@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arithmatica</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    
+        <link rel="stylesheet" type="text/css" href="src/styles.css">
+    </head>
+    <body>
+
+        <div class="container p-2">
+            <div class="row text-center">
+                <div class="col">
+                    <h1>ARITHMATICA</h1>
+                </div>
+            </div>
+            
+            <div class="row text-center px-4 mt-3">
+                <div class="col-12 text-end">
+                    <h5><span>Time Left: </span><span id="timer">60</span></h5>
+                    <h5><span>Score: </span><span id="score">0</span></h5>
+                </div>
+                <div class="col-12 my-3 text-center">
+                    <input disabled class="col-9 text-center" type="text" value="">
+                    <button type="button" class="btn btn-warning btn-sm col-2 text-center p-1 ms-1" id="clear"><h5>CLEAR</h5></button>
+                </div>
+                <div class="mb-2">
+                    <div class="col-12 d-flex justify-content-around">
+                        <button type="button" class="btn col text-center m-1 operators" id="scrapegoat" value="+"><h3>+</h3></button>
+                        <button type="button" class="btn col text-center m-1 operators" value="-"><h3>-</h3></button>
+                        <button type="button" class="btn col text-center m-1 operators" value="*"><h3>*</h3></button>
+                        <button type="button" class="btn col text-center m-1 operators" value="/"><h3>/</h3></button>
+                        <button type="button" class="btn btn-dark col text-center m-1 operators equal-to" value="="><h3>=</h3></button>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-around">
+                    <button type="button" class="btn btn-success col-2 text-center numbers m-1" row="1" col="1" value="1"><h3>1</h3></button>
+                    <button type="button" class="btn btn-success col-2 text-center numbers m-1" row="2" col="1" value="2"><h3>2</h3></button>
+                    <button type="button" class="btn btn-success col-2 text-center numbers m-1" row="3" col="1" value="3"><h3>3</h3></button>
+                    <button type="button" class="btn btn-success col-2 text-center numbers m-1" row="4" col="1" value="4"><h3>4</h3></button>
+                    <button type="button" class="btn btn-success col-2 text-center numbers m-1" row="5" col="1" value="5"><h3>5</h3></button>
+                    <button type="button" class="btn btn-success col-2 text-center numbers m-1" row="6" col="1" value="6"><h3>6</h3></button>
+                </div>
+                <div class="col-12 d-flex justify-content-around">
+                    <button type="button" class="btn btn-success col-2 text-center numbers m-1" row="1" col="2" value="1"><h3>1</h3></button>
+                    <button type="button" class="btn btn-success col-2 text-center numbers m-1" row="2" col="2" value="2"><h3>2</h3></button>
+                    <button type="button" class="btn btn-success col-2 text-center numbers m-1" row="3" col="2" value="3"><h3>3</h3></button>
+                    <button type="button" class="btn btn-success col-2 text-center numbers m-1" row="4" col="2" value="4"><h3>4</h3></button>
+                    <button type="button" class="btn btn-success col-2 text-center numbers m-1" row="5" col="2" value="5"><h3>5</h3></button>
+                    <button type="button" class="btn btn-success col-2 text-center numbers m-1" row="6" col="2" value="6"><h3>6</h3></button>
+                </div>
+                <div class="col-12 d-flex justify-content-around">
+                    <button type="button" class="btn btn-success col-2 text-center numbers m-1" row="1" col="3" value="1"><h3>1</h3></button>
+                    <button type="button" class="btn btn-success col-2 text-center numbers m-1" row="2" col="3" value="2"><h3>2</h3></button>
+                    <button type="button" class="btn btn-success col-2 text-center numbers m-1" row="3" col="3" value="3"><h3>3</h3></button>
+                    <button type="button" class="btn btn-success col-2 text-center numbers m-1" row="4" col="3" value="4"><h3>4</h3></button>
+                    <button type="button" class="btn btn-success col-2 text-center numbers m-1" row="5" col="3" value="5"><h3>5</h3></button>
+                    <button type="button" class="btn btn-success col-2 text-center numbers m-1" row="6" col="3" value="6"><h3>6</h3></button>
+                </div>
+                <div class="col-12 d-flex justify-content-around">
+                    <button type="button" class="btn btn-success col-2 text-center numbers m-1" row="1" col="4" value="1"><h3>1</h3></button>
+                    <button type="button" class="btn btn-success col-2 text-center numbers m-1" row="2" col="4" value="2"><h3>2</h3></button>
+                    <button type="button" class="btn btn-success col-2 text-center numbers m-1" row="3" col="4" value="3"><h3>3</h3></button>
+                    <button type="button" class="btn btn-success col-2 text-center numbers m-1" row="4" col="4" value="4"><h3>4</h3></button>
+                    <button type="button" class="btn btn-success col-2 text-center numbers m-1" row="5" col="4" value="5"><h3>5</h3></button>
+                    <button type="button" class="btn btn-success col-2 text-center numbers m-1" row="6" col="4" value="6"><h3>6</h3></button>
+                </div>
+                <div class="col-12 d-flex justify-content-around">
+                    <button type="button" class="btn btn-success col-2 text-center numbers m-1" row="1" col="5" value="1"><h3>1</h3></button>
+                    <button type="button" class="btn btn-success col-2 text-center numbers m-1" row="2" col="5" value="2"><h3>2</h3></button>
+                    <button type="button" class="btn btn-success col-2 text-center numbers m-1" row="3" col="5" value="3"><h3>3</h3></button>
+                    <button type="button" class="btn btn-success col-2 text-center numbers m-1" row="4" col="5" value="4"><h3>4</h3></button>
+                    <button type="button" class="btn btn-success col-2 text-center numbers m-1" row="5" col="5" value="5"><h3>5</h3></button>
+                    <button type="button" class="btn btn-success col-2 text-center numbers m-1" row="6" col="5" value="6"><h3>6</h3></button>
+                </div>
+                <div class="col-12 d-flex justify-content-around">
+                    <button type="button" class="btn btn-success col-2 text-center numbers m-1" row="1" col="6" value="1"><h3>1</h3></button>
+                    <button type="button" class="btn btn-success col-2 text-center numbers m-1" row="2" col="6" value="2"><h3>2</h3></button>
+                    <button type="button" class="btn btn-success col-2 text-center numbers m-1" row="3" col="6" value="3"><h3>3</h3></button>
+                    <button type="button" class="btn btn-success col-2 text-center numbers m-1" row="4" col="6" value="4"><h3>4</h3></button>
+                    <button type="button" class="btn btn-success col-2 text-center numbers m-1" row="5" col="6" value="5"><h3>5</h3></button>
+                    <button type="button" class="btn btn-success col-2 text-center numbers m-1" row="6" col="6" value="6"><h3>6</h3></button>
+                </div>
+            </div>
+            <div type="button" class="btn btn-dark col-12 mx-auto" id="evaluate">
+                <h3>Submit</h3>
+            </div>
+        </div>
+        
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <script src="src/script.js"></script>
+</html>
