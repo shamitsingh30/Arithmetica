@@ -1,10 +1,8 @@
 body{
     background-color: #2F3C7E;
-    padding-top: 10px;
+    padding: 1vh;
 }
-.container{
-    width: 500px;
-    border: 1px solid black;
+.container-fluid{
     background-color: #FBEAEB;
 }
 
@@ -24,10 +22,15 @@ body{
     background-color: #234E70;
 }
 input{
-    height: 2.5rem;
+    height: 2.4rem;
     width: 60%
 }
 #clear{
-    /* background-color: cyan; */
     margin-top: -5px;
+    height: 2.4rem;
+    border: 1px solid black
+}
+
+.btn{
+    height: 2.8rem;
 }

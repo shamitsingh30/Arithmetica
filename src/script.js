@@ -61,7 +61,6 @@ for(element of elements){
             operator = false;
         }
         else if(Math.abs(col-elementsInInput.at(-1)[0]) <= 1 && Math.abs(row-elementsInInput.at(-1)[1]) <= 1){
-            console.log([col, row], elementsInInput.at(-1));
             if(col == elementsInInput.at(-1)[0] && row == elementsInInput.at(-1)[1]){
                 const d = getLastNumber(col, row);
                 input.value = input.value.slice(0,-d);
@@ -111,7 +110,6 @@ evaluateElement.addEventListener('click', function(event){
     }
     var evaluatingString = input.value.slice(0, i);
     var ansString = input.value.slice(i+1);
-    console.log(eval(evaluatingString), ansString);
     if(eval(evaluatingString) == ansString){
         var operatorArr = [false, false, false, false];
         var scoreElement = document.getElementById('score');
@@ -156,7 +154,6 @@ var editMatrix = function(){
         })
         if(col_arr.length){
             col_arr.sort();
-            console.log(col_arr);
             let k = col_arr.at(-1);
             let j = k-1;
             while(j!=0){
